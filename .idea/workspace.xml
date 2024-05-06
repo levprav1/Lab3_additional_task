@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d2912e-3094-4087-a563-f2cc0ee4c192" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="f2b416ca-9501-47f1-896b-e8e55c303300" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApeManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ApeManipulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataManipulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Ape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/ApeBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Gibon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/Gibbon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Gorilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/Gorilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/Monkey.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,22 +32,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2g6Ceo3pAFDzkciT036YipxrR9M" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2g6E4I1g0sroI3czpaYKeENbH36" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kzsbv/OneDrive/GitHub/Lab3_additional_task",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,14 +65,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f7d2912e-3094-4087-a563-f2cc0ee4c192" name="Changes" comment="" />
-      <created>1715006354097</created>
+      <changelist id="f2b416ca-9501-47f1-896b-e8e55c303300" name="Changes" comment="" />
+      <created>1715009437373</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715006354097</updated>
-      <workItem from="1715006355225" duration="2234000" />
-      <workItem from="1715008739136" duration="41000" />
-      <workItem from="1715008798371" duration="270000" />
+      <updated>1715009437373</updated>
+      <workItem from="1715009440235" duration="203000" />
+      <workItem from="1715009670311" duration="1981000" />
+      <workItem from="1715013632877" duration="520000" />
     </task>
     <servers />
   </component>
