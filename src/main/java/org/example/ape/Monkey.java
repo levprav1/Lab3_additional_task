@@ -2,6 +2,8 @@ package org.example.ape;
 
 import org.example.clothes.Clothes;
 
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.MutableTreeNode;
 import java.util.ArrayList;
 
 public class Monkey {
@@ -11,6 +13,9 @@ public class Monkey {
     private String job;
     private ArrayList<Clothes> clothes;
     private String source;
+
+    public Monkey() {
+    }
 
     public Monkey(String name, int age, String job, ArrayList<Clothes> clothes, String source) {
         this.name = name;
@@ -62,5 +67,40 @@ public class Monkey {
 
     public void setSource(String source) {
         this.source = source;
+    }
+
+    public MutableTreeNode getNode() {
+        DefaultMutableTreeNode monkeyNode = new DefaultMutableTreeNode(getName());
+        monkeyNode.add(new DefaultMutableTreeNode("Возраст: "+getAge()));
+        monkeyNode.add(new DefaultMutableTreeNode("Работа: "+getJob()));
+        for (Clothes clothes1: clothes) {
+            monkeyNode.add(clothes1.getNode());
+        }
+        monkeyNode.add(new DefaultMutableTreeNode("Источник: "+getSource()));
+        return monkeyNode;
+    }
+
+    public void changeCigarette(int numbCigarette, String action) throws Exception {
+        switch(action){
+            case ("+"):
+                addCigarette(numbCigarette);
+                break;
+            case ("-"):
+                grabCigarette(numbCigarette);
+                break;
+            default:
+                throw new Exception();
+        }
+    }
+    private void addCigarette(int numbCigarette) throws Exception {
+        for(Clothes clothes: clothes) {
+            clothes.addCigarette(numbCigarette);
+        }
+    }
+
+    private void grabCigarette(int numbCigarette) throws Exception {
+        for(Clothes clothes: clothes) {
+            clothes.grabCigarette(numbCigarette);
+        }
     }
 }

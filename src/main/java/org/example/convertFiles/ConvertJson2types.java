@@ -13,9 +13,9 @@ import java.io.*;
 public class ConvertJson2types {
 
     public ConvertJson2types() throws IOException {
-        InputStream inputStream = getClass().getResourceAsStream("/Reactors_json.json");
+        InputStream inputStream = getClass().getResourceAsStream("/Monkey_json.json");
 
-        OutputStream outputStream = new FileOutputStream("./Reactors_json.json");
+        OutputStream outputStream = new FileOutputStream("./Monkey_json.json");
 
         byte[] buffer = new byte[1024];
         int bytesRead;
@@ -29,7 +29,7 @@ public class ConvertJson2types {
         ObjectMapper jsonMapper = new ObjectMapper();
 
         // Чтение JSON из файла
-        JsonNode rootNode = jsonMapper.readTree(new File("./Reactors_json.json"));
+        JsonNode rootNode = jsonMapper.readTree(new File("./Monkey_json.json"));
         // Создание объекта ObjectMapper для записи XML
         XmlMapper xmlMapper = new XmlMapper();
 
@@ -39,8 +39,8 @@ public class ConvertJson2types {
 
         // Преобразование JSON в XML
         ObjectNode xmlNode = xmlMapper.createObjectNode();
-        xmlNode.set("reactors", rootNode);
-        xmlMapper.writeValue(new File("./Reactors_xml.xml"), xmlNode);
+        xmlNode.set("monkey", rootNode);
+        xmlMapper.writeValue(new File("./Monkey_xml.xml"), xmlNode);
     }
 
     public void convert2yaml() throws IOException {
@@ -48,13 +48,13 @@ public class ConvertJson2types {
         ObjectMapper jsonMapper = new ObjectMapper();
 
         // Чтение JSON из файла
-        JsonNode rootNode = jsonMapper.readTree(new File("./Reactors_json.json"));
+        JsonNode rootNode = jsonMapper.readTree(new File("./Monkey_json.json"));
 
         // Создание объекта YAMLMapper для записи YAML
         YAMLMapper yamlMapper = new YAMLMapper();
 
         // Преобразование JSON в YAML
-        yamlMapper.writeValue(new File("./Reactors_yaml.yaml"), rootNode);
+        yamlMapper.writeValue(new File("./Monkey_yaml.yaml"), rootNode);
 
     }
 }

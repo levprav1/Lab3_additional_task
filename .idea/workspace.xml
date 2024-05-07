@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b416ca-9501-47f1-896b-e8e55c303300" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApeManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ApeManipulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataManipulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JProgram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Ape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/ApeBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Gibon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/Gibbon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Gorilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/Gorilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/ApeBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/ApeBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ape/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ape/Monkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clothes/Clothes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clothes/Clothes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clothes/Pocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clothes/Pocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clothes/Uniform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clothes/Uniform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/convertFiles/ConvertJson2types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/convertFiles/ConvertJson2types.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/item/CigarettePack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/item/CigarettePack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/item/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/item/Thing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/monkeyParser/MonkeyParserJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/monkeyParser/MonkeyParserJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/monkeyParser/MonkeyParserXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/monkeyParser/MonkeyParserXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/monkeyParser/MonkeyParserYaml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/monkeyParser/MonkeyParserYaml.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kzsbv/OneDrive/GitHub/Lab3_additional_task",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,11 +80,24 @@
       <updated>1715009437373</updated>
       <workItem from="1715009440235" duration="203000" />
       <workItem from="1715009670311" duration="1981000" />
-      <workItem from="1715013632877" duration="520000" />
+      <workItem from="1715013632877" duration="691000" />
+      <workItem from="1715074866216" duration="500000" />
+      <workItem from="1715095380751" duration="1377000" />
+      <workItem from="1715097987270" duration="2669000" />
+      <workItem from="1715101125186" duration="3425000" />
+      <workItem from="1715104595488" duration="3170000" />
+      <workItem from="1715107867284" duration="3736000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.sun.org.apache.xerces.internal.dom.DeferredElementImpl" memberName="firstChild" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

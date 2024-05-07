@@ -1,42 +1,69 @@
 package org.example.monkeyParser;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.example.ape.Monkey;
+import org.example.clothes.Clothes;
+import org.example.clothes.Pocket;
+import org.example.clothes.Uniform;
+import org.example.item.CigarettePack;
+import org.example.item.Item;
+import org.example.item.Thing;
 
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
+import java.util.Map;
 
 
 public class MonkeyParserJson implements MonkeyParser {
     public Monkey parse(String filePath) throws IOException {
 
-        ObjectMapper mapper = new ObjectMapper();
-        ArrayList<Reactor> result = new ArrayList<>();
+        ObjectMapper objectMapper = new ObjectMapper();
 
-        JsonNode rootNode = mapper.readTree(new File(filePath));
+        JsonNode rootNode = objectMapper.readTree(new File(filePath));
 
-        for (JsonNode reactorNode : rootNode) {
-            String name = reactorNode.fieldNames().next();
-            JsonNode reactor = reactorNode.get(name);
+        Map<String, JsonNode> monkeyMap = objectMapper.convertValue(rootNode.get("Мартышка"), new TypeReference<Map<String, JsonNode>>() {
+        });
 
-            Reactor r = new Reactor();
-            r.setName(name);
-            r.setClassReactor(reactor.get("class").asText());
-            r.setBurnup(reactor.get("burnup").asDouble());
-            r.setKpd(reactor.get("kpd").asDouble());
-            r.setEnrichment(reactor.get("enrichment").asDouble());
-            r.setThermal_capacity(reactor.get("termal_capacity").asDouble());
-            r.setElectrical_capacity(reactor.get("electrical_capacity").asDouble());
-            r.setLife_time(reactor.get("life_time").asInt());
-            r.setFirst_load(reactor.get("first_load").asDouble());
-            r.setSource("json");
+        Monkey monkey = new Monkey();
+        monkey.setName("Мартышка");
+        monkey.setAge(monkeyMap.get("Возраст").asInt());
+        monkey.setJob(monkeyMap.get("Работа").asText());
+        monkey.setSource("json");
 
-            result.add(r);
+        ArrayList<Clothes> clothes = new ArrayList<>();
+        for (JsonNode clothesNode : monkeyMap.get("Одежда")) {
+            Uniform clothes1 = new Uniform();
+            clothes1.setName(clothesNode.get("Название").asText());
+            clothes1.setColor(clothesNode.get("Цвет").asText());
+
+            ArrayList<Pocket> pockets = new ArrayList<>();
+            for (JsonNode pocketNode : clothesNode.get("Карманы")) {
+                Pocket pocket = new Pocket();
+                ArrayList<Item> items = new ArrayList<>();
+                for (JsonNode itemNode : pocketNode.get("Предметы")) {
+                    if (itemNode.isTextual()) {
+                        Thing thing = new Thing();
+                        thing.setName(itemNode.asText());
+                        items.add(thing);
+                    } else {
+                        JsonNode cigarPack = itemNode.get("Пачка_сигарет");
+                        CigarettePack pack = new CigarettePack();
+                        pack.setCurrentNum(cigarPack.get("Кол-во_сигарет").asInt());
+                        pack.setMaxNum(cigarPack.get("Максимальная_вместимость").asInt());
+                        items.add(pack);
+                    }
+                }
+                pocket.setItems(items);
+                pockets.add(pocket);
+            }
+            clothes1.setPockets(pockets);
+            clothes.add(clothes1);
         }
-        return result;
+        monkey.setClothes(clothes);
+        return monkey;
     }
 }
